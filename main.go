@@ -81,12 +81,10 @@ func main() {
 		totalInvested = totalInvested + buyinCost
 		totalNow = totalNow + current
 
-		fmt.Printf("%-4s: %.2f (%.2f)\n", buyin.Ticker, current, buyinCost)
+		fmt.Printf("%6s: %.2f (%.2f): %.5f%%\n", buyin.Ticker, current, buyinCost, (current/buyinCost)*100.0)
 	}
 
 	fmt.Printf("Totals: %.2f (%.2f): %.5f%%\n", totalNow, totalInvested, (totalNow/totalInvested)*100.0)
-
-	// SHOW RICHNESS
 }
 
 func getConfigPath() (string, error) {
