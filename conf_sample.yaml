@@ -1,0 +1,10 @@
+api:
+  key: bitvavo-api-key-here
+  secret: bitvavo-api-secret-here
+buyins:
+  - ticker: XRP
+    num: 12321.0047
+    price: 1.5
+  - ticker: SHIB
+    num: 15968202919.1
+    price: 0.0000003
